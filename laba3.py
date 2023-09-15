@@ -19,4 +19,14 @@ for letter in userword:
 if ok:
     print("All letters are in my word")
 
+# Task 3
 
+wordlist = mystring.split(" ")
+maxlen = len(wordlist[0])
+maxstring = wordlist[0]
+for word in wordlist:
+    if maxlen < len(word):
+        maxlen = len(word)
+        maxstring = word
+
+print("Max length word is " + maxstring + " with " + str(maxlen) + " Symbols ")

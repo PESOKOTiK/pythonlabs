@@ -7,3 +7,25 @@ for i in range(n):
 
 max_element = max(mas)
 print("Max element is " + str(max_element))
+
+# task 2
+size = 7
+mas = []
+for i in range(size):
+    row = [0] * size
+    mas.append(row)
+
+x = 1
+for i in range(0, 7):
+    for j in range(0, 7):
+        if x+j <= 7:
+            mas[i][j] = x+j
+        else:
+            mas[i][j] = 0
+
+    x = x+1
+
+for i in range(7):
+    for j in range(7):
+        print(mas[i][j], end=" ")
+    print()

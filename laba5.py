@@ -5,8 +5,7 @@ for i in range(n):
     element = int(input("Enter mas number "))
     mas.append(element)
 
-max_element = max(mas)
-print("Max element is " + str(max_element))
+print("Max element is " + str(max(mas)))
 
 # task 2
 size = 7
@@ -29,3 +28,5 @@ for i in range(7):
     for j in range(7):
         print(mas[i][j], end=" ")
     print()
+
+

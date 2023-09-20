@@ -1,8 +1,14 @@
 # Task 1
-mystring = "random text from my heart to my code and to all of its readers in the world"
-tmpstring = mystring[19:(len(mystring) - 1)]
-for i in range(0, (len(tmpstring) - 1), 4):
-    print(tmpstring[i])
+while True:
+    text = input("Введіть рядок, який має бути не менше 28 символів: ")
+    if len(text) >= 28:
+        break
+    else:
+        print("Рядок занадто короткий. Спробуйте ще раз.")
+result = text[18::4]
+
+print("Результат:", result)
+
 # Task 2
 myword = input("first word  ")
 userword = input("user word  ")
@@ -20,7 +26,7 @@ if ok:
     print("All letters are in my word")
 
 # Task 3
-
+mystring = "random text from my heart to my code and to all of its readers in the world"
 wordlist = mystring.split(" ")
 maxlen = len(wordlist[0])
 maxstring = wordlist[0]

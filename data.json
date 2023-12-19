@@ -1,0 +1,14 @@
+[
+  {
+    "type": "college",
+    "students": 235
+  },
+  {
+    "type": "school",
+    "students": 550
+  },
+  {
+    "type": "university",
+    "students": 212
+  }
+]
